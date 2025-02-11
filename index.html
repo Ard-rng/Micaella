@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNP Calapan Immersion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hearts-container" id="hearts-container"></div>
+    <button class="profile-btn" onclick="toggleProfile()">👤</button>
+    <div id="profile-panel" class="profile-panel">
+        <div class="profile-header">
+            <div class="profile-img">
+                <img src="pfp.jpg">
+            </div>
+            <div>
+                <h3>Micaella Temple</h3>
+                <p>12 - Spain</p>
+            </div>
+        </div>
+        <button class="close-btn" onclick="toggleProfile()">Close</button>
+    </div>
+    <div class="container">
+        <div id="home" class="fade show">
+            <h1>Welcome to My 10-Day Immersion</h1>
+            <p>Join me as I share my experiences at PNP Calapan.</p> 
+            <img src="entry.jpg" alt="Welcome Image" class="main-img">
+            <br>
+            <button onclick="showJournal()">View Journal</button>
+        </div>
+
+        <div id="content" class="journal-container fade">
+            <h3>Click a day to see my experience!</h3>
+            <button onclick="goBack()">Back to Home</button>
+        </div>
+    </div>
+
+    <button class="open-btn" onclick="toggleSidebar()">☰ Open Journal</button>
+    <div id="sidebar" class="sidebar">
+        <h2>My 10-Day Immersion</h2>
+        <button onclick="showDay(1)">Day 1</button>
+        <button onclick="showDay(2)">Day 2</button>
+        <button onclick="showDay(3)">Day 3</button>
+        <button onclick="showDay(4)">Day 4</button>
+        <button onclick="showDay(5)">Day 5</button>
+        <button onclick="showDay(6)">Day 6</button>
+        <button onclick="showDay(7)">Day 7</button>
+        <button onclick="showDay(8)">Day 8</button>
+        <button onclick="showDay(9)">Day 9</button>
+        <button onclick="showDay(10)">Day 10</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
